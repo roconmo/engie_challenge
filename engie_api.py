@@ -4,11 +4,6 @@ import uvicorn
 
 app = FastAPI()
 
-#########################################################################################
-# https://fastapi.tiangolo.com/es/tutorial/body-multiple-params/#singular-values-in-body
-
-
-# async def root1(request: Request):
 @app.post("/productionplan")
 async def get_body(request: Request):
     """
@@ -24,7 +19,7 @@ async def get_body(request: Request):
 
 if __name__ == '__main__':
     load_params()
-    uvicorn.run("engie_api:app", port=8500, log_level="info")
+    uvicorn.run("engie_api:app", port=8888, log_level="info")
 
 
 
