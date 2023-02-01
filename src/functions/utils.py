@@ -12,8 +12,6 @@ def load_params():
     logging.basicConfig(filename=r'src\logs\extractor.log', level=logging.DEBUG)
 
 
-
-
 def calculate_wind_resource(average_wind, pMax, efficiency):
     """
     Calculates the production of wind plants
